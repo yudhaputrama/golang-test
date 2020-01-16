@@ -23,7 +23,9 @@ jobs:
             go get -u github.com/golang/dep/cmd/dep
             echo $PATH
             echo $GOPATH
-            ls /home/runner/go/
+            ls /home/runner/go/bin
+            ls /home/runner/go/src
+            ls $GOPATH
             dep ensure
         fi
     - name: Test
