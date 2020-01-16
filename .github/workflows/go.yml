@@ -20,8 +20,9 @@ jobs:
     - name: Get dependencies
       working-directory: 'src/github.com/yudhaputrama/golang-test'
       run: |
-        export PATH="$PATH:/home/runner/go/bin"
+        
         export GOPATH="$GITHUB_WORKSPACE"
+        export PATH="$PATH:$GOPATH/bin"
         go get -v -t -d ./...
         if [ -f Gopkg.toml ]; then
             go get -u github.com/golang/dep/cmd/dep
