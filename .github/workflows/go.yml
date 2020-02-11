@@ -9,5 +9,10 @@ jobs:
 
     - name: run
       uses: cedrickring/golang-action@1.4.1
+    - name: Upload math result for job 1
+      uses: actions/upload-artifact@v1
+      with:
+        name: calculator
+        path: golang-test
 
   
