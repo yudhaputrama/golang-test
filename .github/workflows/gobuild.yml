@@ -26,6 +26,7 @@ jobs:
         export GOPATH=$HOME/go
         export GOBIN=$GOPATH/bin
         export PATH=$GOBIN:$GOROOT/bin:$PATH
+        mkdir -p $GOBIN
         
         curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
         dep ensure -vendor-only
