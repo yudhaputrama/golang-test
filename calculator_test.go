@@ -12,7 +12,7 @@ func TestSumString(t *testing.T) {
 		{
 			name: "sum all",
 			args: []string{"1", "2", "3"},
-			want: 6,
+			want: 4,
 		},
 	}
 	for _, tt := range tests {
