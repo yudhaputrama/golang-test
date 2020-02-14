@@ -6,8 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-
+    
     - name: run
       uses: cedrickring/golang-action@1.4.1
+      with:
+        args: ls /github/home
       env:
         PROJECT_PATH: ./
