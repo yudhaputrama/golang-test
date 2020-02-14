@@ -6,7 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    
+    - name: Print action env
+      run: env
     - name: run
       uses: cedrickring/golang-action@1.4.1
       with:
